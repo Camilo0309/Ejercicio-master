@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.i001114.ejercicio.Views.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/avatar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/register_name"
+            style="@style/Edit_Text"
+            android:hint="Nombre/Nick: "
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/register_email"
+            style="@style/Edit_Text"
+            android:hint="Correo: "
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/register_pass"
+            style="@style/Edit_Text"
+            android:hint="Contraseña: "
+            android:inputType="textPassword" />
+
+
+
+        <Button
+            android:id="@+id/button_register"
+            android:text="Registrarse"
+            style="@style/button_style"
+            android:onClick="Register"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
